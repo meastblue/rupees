@@ -1,0 +1,22 @@
+{
+  "name": "@rupees/purple",
+  "version": "1.0.0",
+  "description": "CSS Library",
+  "main": "index.js",
+  "author": "Massinissa Amalou",
+  "license": "MIT",
+  "type": "module",
+  "private": false,
+  "scripts": {
+    "build": "gulp"
+  },
+  "devDependencies": {
+    "del": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.62.1"
+  }
+}

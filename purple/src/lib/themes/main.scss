@@ -1,0 +1,113 @@
+:root {
+    --text-color: rgba(255, 255, 255, 0.87);
+    --text-color-secondary: rgba(255, 255, 255, 0.6);
+    --font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    --content-padding: 1rem;
+    --inline-spacing: 0.5rem;
+    --border-radius: 3px;
+    --maskbg: rgba(0, 0, 0, 0.4);
+    --focus-ring: 0 0 0 1px #93cbf9;
+
+    --neutral-0: #FFFFFF;
+    --neutral-100: #F7F8F8;
+    --neutral-200: #EFF0F1;
+    --neutral-300: #E7E9EA;
+    --neutral-400: #DFE1E3;
+    --neutral-500: #B7BCBF;
+    --neutral-600: #8E979C;
+    --neutral-700: #5E6A71;
+    --neutral-800: #262A2D;
+    --neutral-900: #131517;
+
+    --primary-100: #EEF6F4;
+    --primary-200: #DDEEE9;
+    --primary-300: #007D57;
+    --primary-400: #006648;
+    --primary-500: #004D36;
+
+    --accent-300: #52A810;
+
+    --danger-100: #FBE9E9;
+    --danger-200: #F7D4D4;
+    --danger-300: #DC3837;
+    --danger-400: #B62120;
+    --danger-500: #8A0100;
+    --danger-600: #6D1413;
+
+    --warning-100: #FDF4E7;
+    --warning-200: #FBE9D0;
+    --warning-300: #EE9D2B;
+    --warning-400: #EC9213;
+    --warning-500: #CF8011;
+    --warning-600: #8D570C;
+
+    --success-100: #F5FAF5;
+    --success-200: #DDEEDF;
+    --success-300: #14851D;
+    --success-400: #116F18;
+    --success-500: #0D5914;
+    --success-600: #0A430F;
+
+    --info-100: #EBF3FA;
+    --info-200: #D6E6F5;
+    --info-300: #176EC4;
+    --info-400: #145CA4;
+    --info-500: #0F4880;
+    --info-600: #0C3864;
+
+    --azure-100: #EBF2F6;
+    --azure-200: #ACC9DB;
+    --azure-300: #8AB3CC;
+    --azure-400: #5792B6;
+    --azure-500: #357CA7;
+    --azure-600: #255775;
+    --azure-700: #204C66;
+
+    --cobalt-100: #E6EDF3;
+    --cobalt-200: #96B5CC;
+    --cobalt-300: #6B97B7;
+    --cobalt-400: #2B6A97;
+    --cobalt-500: #004B82;
+    --cobalt-600: #00355B;
+    --cobalt-700: #002E4F;
+
+    --peacock-100: #E6EDF3;
+    --peacock-200: #96B5CC;
+    --peacock-300: #6B97B7;
+    --peacock-400: #2B6A97;
+    --peacock-500: #004B82;
+    --peacock-600: #00355B;
+    --peacock-700: #002E4F;
+
+    --forest-100: #E6EDF3;
+    --forest-200: #96B5CC;
+    --forest-300: #6B97B7;
+    --forest-400: #2B6A97;
+    --forest-500: #004B82;
+    --forest-600: #00355B;
+    --forest-700: #002E4F;
+
+    --cherry-100: #F2E8EA;
+    --cherry-200: #C99FA8;
+    --cherry-300: #B37883;
+    --cherry-400: #923E4E;
+    --cherry-500: #7C162A;
+    --cherry-600: #681223;
+    --cherry-700: #520F1C;
+
+    --terracotta-100: #F6EBEA;
+    --terracotta-200: #DAAEAB;
+    --terracotta-300: #CB8C88;
+    --terracotta-400: #B45B54;
+    --terracotta-500: #A53931;
+    --terracotta-600: #91322B;
+    --terracotta-700: #7A2A24;
+
+    --pumpkin-100: #FAEDE6;
+    --pumpkin-200: #ECB396;
+    --pumpkin-300: #E4946B;
+    --pumpkin-400: #D9652B;
+    --pumpkin-500: #D14600;
+    --pumpkin-600: #B83D00;
+    --pumpkin-700: #A33600;
+}

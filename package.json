@@ -1,0 +1,14 @@
+{
+  "name": "rupees",
+  "version": "1.0.0",
+  "description": "Design system",
+  "main": "index.js",
+  "author": "Massinissa Amalou",
+  "license": "MIT",
+  "private": false,
+  "workspaces": [
+    "@rupees/purple"
+  ],
+  "devDependencies": {},
+  "dependencies": {}
+}

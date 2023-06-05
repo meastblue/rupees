@@ -1,0 +1,30 @@
+$themeColors: 'blue', 'green', 'yellow', 'cyan', 'pink', 'indigo', 'teal', 'orange', 'bluegray', 'purple', 'gray', 'red', 'primary' !default;
+$colorShades: 50, 100, 200, 300, 400, 500, 600, 700 !default;
+$surfaceShades: 0, 50, 100, 200, 300, 400, 500, 600, 700 !default;
+$rgbaShades: 10, 20, 30, 40, 50, 60, 70, 80, 90 !default;
+
+@include surface-class('text', 'color', $surfaceShades);
+@include surface-class('surface', 'background-color', $surfaceShades);
+@include surface-class('border', 'border-color', $surfaceShades);
+@include style-class('background-color', (bg-transparent:'transparent'), true);
+@include style-class('border-color', (border-transparent:'transparent'), true);
+@include color-class('text-', 'color', $themeColors, $colorShades);
+@include color-class('bg-', 'background-color', $themeColors, $colorShades);
+@include color-class('border-', 'border-color', $themeColors, $colorShades);
+@include rgba-color-class('bg-', 'background-color', ('white': '255,255,255', 'black': '0,0,0'), $rgbaShades);
+@include rgba-color-class('border-', 'border-color', ('white': '255,255,255', 'black': '0,0,0'), $rgbaShades);
+@include rgba-color-class('text-', 'color', ('white': '255,255,255', 'black': '0,0,0'), $rgbaShades);
+
+$custom-properties: (
+    'text-primary': ('color': var(--primary-300)),
+    'bg-primary': ('color': var(--primary-100), 'background-color': var(--neutral-100)),
+    'bg-white': ('background-color': --neutral-0),
+    'border-primary': ('border-color': var(--primary-300)),
+    'text-white': ('color': --neutral-0),
+    'border-white': ('border-color': --neutral-400),
+    'text-minor': ('color': var(--neutral-800)),
+    'text-major': ('color': var(--neutraal-900)),
+    ) !default;
+
+@include generate-class($custom-properties, true, true
+);
