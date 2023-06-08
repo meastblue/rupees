@@ -5,11 +5,13 @@
   "main": "index.js",
   "author": "Massinissa Amalou",
   "license": "MIT",
-  "private": false,
+  "private": true,
   "workspaces": [
-    "@rupees/purple",
-    "&rupees/blue"
+    "packages/*"
   ],
+  "scripts": {
+    "build:purple": "yarn workspace @rupees/purple build"
+  },
   "devDependencies": {},
   "dependencies": {}
 }
