@@ -1,0 +1,20 @@
+name: Purple
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - packages/purple
+    branches:
+      - "*"
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  version:
+    uses: ./.github/workflows/shared/version.yml
+  build:
+    needs: version
+    uses: ./.github/workflows/shared/build.yml

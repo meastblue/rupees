@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Design system",
   "main": "index.js",
+  "type": "module",
   "author": "Massinissa Amalou",
   "license": "MIT",
   "private": true,
@@ -10,8 +11,13 @@
     "packages/*"
   ],
   "scripts": {
-    "build:purple": "yarn workspace @rupees/purple build"
+    "clean": "lerna clean",
+    "build": "lerna run build",
+    "build:purple": "lerna run --scope=@rupees/purple build",
+    "build:white": "lerna run --scope=@rupees/white build"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "lerna": "^7.0.0"
+  },
   "dependencies": {}
 }

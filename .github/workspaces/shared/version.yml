@@ -1,0 +1,36 @@
+name: Version
+
+on:
+  workflow_call:
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          persist-credential: true
+
+      - name: Setup NodeJs
+        uses: actions/setup-node&v3
+        with:
+          node-version: lts/*
+
+      - name: Get last commit author
+        run: |
+          LAST_COMMIT=$(git log -1 --pretty=format:"%an|%ae")
+          LAST_COMMIT_NAME=$(echo $LAST_COMMIT | cut -d '|' -f1)
+          LAST_COMMIT_EMAIL=$(echo $LAST_COMMIT | cut -d '|' -f2)
+          echo "COMMIT_NAME=$LAST_COMMIT_NAME" >> $GITHUB_ENV
+          echo "COMMIT_EMAIL=$LAST_COMMIT_EMAIL" >> $GITHUB_ENV
+
+      - name: Set Git Configuration
+        run: |
+          git config --global user.name ${{ env.COMMIT_NAME }}
+          git config --global user.email ${{ env.COMMIT_EMAIL }}
+
+      - name: Extract package version
+        run: |
+          CURRENT_VERSION=$(node -p "require('./pacakges/purple/package.json').version")
+          echo "CURRENT_VERSION=$CURRENT_VERSION" >> $GITHUB_ENV
